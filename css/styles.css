@@ -1,0 +1,566 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #d7c9aa;
+  z-index: 1000;
+}
+
+#header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+#logo img {
+  height: 50px;
+  margin-top: 15px;
+  margin-left: 25%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 15px;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #0e1428;
+  font-weight: bold;
+  padding: 5px 15px;
+  
+}
+
+nav ul li a:hover {
+  color: #9AA9CE;
+  background-color: #0e1428;
+  border-radius: 3.5;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 3px;
+  padding: 5px 15px;
+
+}
+
+#nav-menu a:focus {
+  outline: 2px solid #2A543C;
+}
+
+#phone-number {
+  color: #0e1428;
+  padding: 0px 45px;
+}
+
+
+/* Welcome Page */
+  #welcome-section {
+    text-align: center;
+    margin-top: 0px;
+    background: url(/images/cover.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .welcome-message {
+    text-align: center;
+    margin-top: 200px;
+    padding: 12px 30px;
+    margin-bottom: 10%;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: transparent;
+    color: #d7c9aa;
+    padding: 15px 35px;
+    border: 2px solid #d7c9aa;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 25%;
+    margin-top: 10%;
+    background-color: #0e142871;
+  }
+  
+  .cta-button:hover {
+    background-color: #0e1428;
+    color: #D9D7BD;
+    border: 2px solid #9A9177;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Reviews Slider Styles */
+  .reviews-slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    overflow: hidden;
+    margin-top: 80px;
+  }
+  
+  .review {
+    position: absolute;
+    top: 0;
+    left: 10;
+    width: 90%;
+    padding: 40px;
+    color: whitesmoke;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+    font-size: 22px;
+    background-color: #29332f2b;
+    border-radius: 80px;
+  }
+  
+  .review.active {
+    opacity: 1;
+  }
+
+  button:focus {
+      outline: 2px solid #2A543C;
+  }
+
+/* MAIN */
+
+main h2 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* About Us Page */
+#about-us {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #0e1428;
+  color: #f0f3f5;
+}
+
+#about-us h2 {
+  color: #d7c9aa;
+}
+
+#about-us .container {
+  max-width: 100vh;
+  margin: 0 auto;
+}
+
+/* Mission and Values Section */
+#mission-values {
+  background-color: #d7c9aa;
+  padding: 50px 0;
+  color: #1d372a;
+}
+
+#mission-values h2 {
+  color: #0e1428;
+}
+
+#mission-values .container {
+  max-width: 100vh;
+  margin: 0 auto;
+}
+
+.values-list {
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+.value-item {
+  margin-bottom: 10px;
+}
+
+/* Club Facilities Section */
+#club-facilities {
+  padding: 50px 0;
+  background-color: #0e1428;
+  color: #f0f3f5;
+}
+
+#club-facilities h2 {
+  color: #d7c9aa;
+}
+
+#club-facilities .container {
+  max-width: 100vh;
+  margin: 0 auto;
+}
+
+.facilities-list {
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+.facility-item {
+  margin-bottom: 10px;
+}
+
+/* Membership Information Section */
+#membership-info {
+  background-color: #d7c9aa;
+  padding: 50px 0;
+  color: #7b2d26;
+}
+
+#membership-info h2 {
+  color: #0e1428;
+}
+
+#membership-info .container {
+  max-width: 100vh;
+  margin: 0 auto;
+}
+
+.membership-benefits {
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+.benefit-item {
+  margin-bottom: 10px;
+}
+
+/* Styling for images */
+.container img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* *** CONTACT US FORM *** */
+
+/* Define global styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Set body background color */
+body {
+  background-color: #35654d;
+}
+
+/* Container styles */
+#contactContainer {
+  width: 90%;
+  max-width: 600px;
+  padding: 2em 1.5em;
+  background-color: #f3e5c7;
+  margin: 1em auto;
+  border-radius: 0.5em;
+  color: #0E1428;
+}
+
+/* Typography */
+h4 {
+  font-size: 1.5em;
+}
+
+/* Input section styles */
+.inputSection {
+  margin: 1em 0;
+}
+
+/* Label and error message styles */
+label,
+.errorMessage {
+  display: block;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
+
+/* Error message specific styles */
+.errorMessage {
+  margin-top: 0.5em;
+  color: #ff4747;
+  font-style: italic;
+}
+
+/* Form input styles */
+input,
+button,
+textarea {
+  display: block;
+  outline: none;
+  width: 100%;
+  padding: 0.8em;
+  border-radius: 0.3em;
+  border: 1.5px solid #3e6383;
+  background-color: #ffffff;
+}
+
+/* Specific styles for inputs and textareas */
+input,
+textarea {
+  padding: 1em;
+}
+
+/* Field focus */
+input:focus,
+textarea:focus {
+    background-color: #F0F3F5;
+    color: #333;
+    border-color: #0E1428;
+    box-shadow: 0 0 0 3px rgba(31, 59, 128, 0.3);
+}
+
+/* Button styles */
+button {
+  font-size: 1em;
+  background-color: #203242;
+  border: none;
+  color: #ffffff;
+  margin-top: 2em;
+  cursor: pointer;
+}
+
+#resetButton {
+  background-color: #7B2D26;
+}
+
+/* Button hover and focus styles */
+button:hover,
+button:focus {
+  background-color: #0E1428;
+}
+
+#resetButton:hover {
+  background-color: #185154;
+}
+
+#submitButton:hover {
+  color: #ebdab5;
+}
+
+#resetButton:focus {
+  outline: 2px solid #BCCBF0;
+}
+
+#submitButton:focus {
+  outline: 2px solid #BCCBF0;
+}
+
+/* Required color for error messages */
+.requiredColor {
+  color: #ff4747;
+}
+
+/* Hide elements */
+.hide {
+  display: none;
+}
+
+/* Footer Section */
+footer {
+  background-color: #0e1428;
+  color: #d7c9aa;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  margin-left: 20px;
+}
+
+.footer-links a {
+  color: #d7c9aa;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  color: #9AA9CE;
+}
+
+.footer-logo img {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+footer a:focus {
+  outline: 2px solid #BCCBF0
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  
+  /* HEADER */
+  #header-container {
+    padding: 3px;
+  }
+
+  #logo img {
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  #phone-number {
+    display: none; 
+  }
+
+  #menu-icon-label {
+    cursor: pointer;
+    padding: 10px 16px 10px 10px;
+    background-color: #d7c9aa;
+    display: block;
+  }
+
+  #nav-menu {
+    display: none;
+  }
+
+  #nav-menu.active {
+    display: block;
+    text-align: center;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #d7c9aa;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #0e1428;
+    margin-right: 12px;
+  }
+
+  nav ul li a:hover {
+    background-color: #9AA9CE;
+    color: #fff;
+  }
+
+  /* WELCOME PAGE */
+  #welcome-section {
+    height: auto;
+    padding-top: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .welcome-message {
+    margin-top: 100px;
+    margin-bottom: 5%;
+  }
+  .welcome-message img {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  .cta-button {
+    margin-top: 0%;
+    font-size: 12px;
+  }
+  .reviews-slider {
+    margin-top: 50px;
+  }
+  .review {
+    padding: 20px;
+    font-size: 12px;
+    background-color: #0e142871;
+    border: 1.5px solid #d7c9aa3f;
+    border-style: groove;
+    border-radius: 30px;
+    color: #d7c9aa;
+  }
+
+  /* MAIN CONTENT */
+  #about-us,
+  #mission-values,
+  #club-facilities,
+  #membership-info {
+    padding: 30px 0;
+  }
+  main h2 {
+    font-size: 24px;
+  }
+  #about-us .container,
+  #mission-values .container,
+  #club-facilities .container,
+  #membership-info .container {
+    max-width: 90%;
+  }
+  .container img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-links {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .footer-text {
+    margin-right: 0;
+  }
+}
+
+/* CONTACT PAGE */
+@media only screen and (max-width: 450px) {
+  #contactContainer {
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (min-width: 769px) {
+  #menu-icon-label {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
